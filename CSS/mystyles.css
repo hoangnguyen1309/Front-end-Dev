@@ -1,0 +1,27 @@
+body {
+    background-image: url("../CSS/notebook_@2X.png")
+}
+
+h1 {
+    color: red;
+    text-transform: uppercase;
+}
+
+figcaption {
+    color: darkblue;
+}
+
+section {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12;
+    margin-left: 5%;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+}

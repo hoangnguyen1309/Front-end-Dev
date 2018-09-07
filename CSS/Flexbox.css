@@ -1,0 +1,11 @@
+.flex-container {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+}
+
+.flex-container > div {
+    border: 1px solid #B3B6B7;
+    margin: 30px 5px 0px 5px;
+    padding: 40px 5px 40px 5px;
+}
