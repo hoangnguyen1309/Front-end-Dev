@@ -1,0 +1,22 @@
+Exercise 1
+a. $('p')
+b. $('p: first')
+c. $('p#info)
+
+Exercise 2
+a. $('p').text('content')
+b. $('p').append('content')
+c. $('p').css('color', 'red')
+
+Exercise 3
+a. $('p: first').click(function() {$(this).hide(); });
+
+b. $('p').dblclick(function() {$(this).hide(); });
+
+c. $('button').click(function() {
+	$('p').hide();
+	$(this).text('Pressed'); });
+
+d. $('button').click(function() {alert($('p:first').text()); });
+
+

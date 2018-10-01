@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class='col-xs-3' id='result'></div> <br />
+    <div class='col-xs-4'>
+        <input type='text' value='' id='firstNum' />
+        <input type='text' value='' id='secondNum' />
+    </div>
+    <input type='button' value='+' id='plus' />
+    <input type='button' value='-' id='minus' />
+
+    <script>
+        $(document).ready(function () {
+            var a, b;
+            $('#firstNum').change(function () {
+                a = $('#firstNum').val();
+            });
+
+            $('#secondNum').change(function () {
+                b = $('#secondNum').val();
+            });
+
+            $('#plus').click(function () {
+                var c = Number(a) + Number(b);
+                $('#result').text('Result = ' + c);
+            });
+
+            $('#minus').click(function () {
+                var d = Number(a) - Number(b);
+                $('#result').text('Result = ' + d);
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Paragraphs</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div id='chap1'>
+        <p><b>Chapter 1.</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit eget gravida cum sociis natoque penatibus et magnis dis. Est ante in nibh mauris cursus mattis molestie a iaculis. Molestie a iaculis at erat pellentesque. Convallis tellus id interdum velit. Varius morbi enim nunc faucibus a pellentesque sit amet. Elementum nibh tellus molestie nunc non. Id ornare arcu odio ut sem. Hendrerit dolor magna eget est lorem ipsum dolor sit. Varius duis at consectetur lorem donec massa sapien faucibus. Risus quis varius quam quisque id diam vel quam.</p>
+    </div>
+
+    <div id='chap2'>
+        <p><b>Chapter 2.</b> Elementum facilisis leo vel fringilla est ullamcorper. Faucibus et molestie ac feugiat sed lectus vestibulum. Massa eget egestas purus viverra. Bibendum enim facilisis gravida neque convallis a cras. Dictum sit amet justo donec enim diam vulputate. Aliquam id diam maecenas ultricies mi eget. Pretium nibh ipsum consequat nisl. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas. Platea dictumst quisque sagittis purus sit amet. Nunc congue nisi vitae suscipit tellus mauris a diam maecenas. Eu facilisis sed odio morbi quis commodo odio.</p>
+    </div>
+
+    <div>
+        <input type='button' value='Toggle Chapter 1' id='toggle'/>
+        <input type='button' value='Fade out both' id='fade'/>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('#toggle').click(function() {
+                $('#chap1').toggle();
+            });
+
+            $('#fade').click(function() {
+                $('#chap1, #chap2').fadeOut();
+            });
+        });
+    </script>
+</body>
+
+</html>
